@@ -44,18 +44,19 @@ header{
     padding:18px 30px;
 }
 
-/* LOGO */
+/* LOGO (HEADER SMALL) */
 .logo{
     display:flex;
     align-items:center;
-    gap:14px;
+    gap:12px;
 }
 
 .logo img{
-    width:100px;
+    width:70px;
     height:auto;
 }
 
+/* TEXT LOGO */
 .logo-text{
     font-size:18px;
     font-weight:600;
@@ -91,10 +92,16 @@ header{
     background: radial-gradient(circle at top, #ffffff 0%, #f7f7f7 100%);
 }
 
+/* LOGO (HERO BIG) */
 .hero img{
     width:240px;
     margin-bottom:30px;
     filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
+    transition: transform 0.4s ease;
+}
+
+.hero img:hover{
+    transform: scale(1.03);
 }
 
 .hero h1{
