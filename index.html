@@ -10,6 +10,7 @@
 
 <style>
 
+/* RESET */
 *{
     margin:0;
     padding:0;
@@ -17,19 +18,19 @@
 }
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     background:#fff;
     color:#111;
-    overflow-x:hidden;
+    line-height:1.6;
 }
 
-/* NAVBAR */
+/* HEADER */
 header{
     position:fixed;
     top:0;
     width:100%;
-    background:rgba(255,255,255,0.7);
-    backdrop-filter: blur(14px);
+    background:rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
     border-bottom:1px solid #eee;
     z-index:1000;
 }
@@ -43,14 +44,15 @@ header{
     padding:18px 30px;
 }
 
+/* LOGO */
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:14px;
 }
 
 .logo img{
-    width:120px;
+    width:110px;
     height:auto;
 }
 
@@ -86,20 +88,25 @@ header{
     justify-content:center;
     text-align:center;
     padding:0 20px;
-    background: radial-gradient(circle at top, #ffffff 0%, #f6f6f6 100%);
+    background: radial-gradient(circle at top, #ffffff 0%, #f7f7f7 100%);
+}
+
+.hero img{
+    width:180px;
+    margin-bottom:25px;
 }
 
 .hero h1{
-    font-size:64px;
+    font-size:58px;
     font-weight:700;
     letter-spacing:-2px;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .hero p{
     font-size:20px;
     color:#555;
-    max-width:700px;
+    max-width:750px;
     margin:auto;
     margin-bottom:40px;
 }
@@ -130,23 +137,24 @@ section{
 
 /* TITLES */
 h2{
-    font-size:42px;
+    font-size:40px;
     font-weight:700;
     margin-bottom:50px;
     letter-spacing:-1px;
+    text-align:center;
 }
 
 /* GRID */
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:25px;
 }
 
 /* CARDS */
 .card{
     border:1px solid #eee;
-    border-radius:20px;
+    border-radius:18px;
     padding:30px;
     transition:0.3s;
     background:#fff;
@@ -167,6 +175,14 @@ h2{
     background:#fafafa;
     border-radius:30px;
     padding:80px 40px;
+    text-align:center;
+}
+
+.about p{
+    font-size:18px;
+    color:#555;
+    max-width:800px;
+    margin:auto;
 }
 
 /* FOOTER */
@@ -175,12 +191,11 @@ footer{
     color:#fff;
     text-align:center;
     padding:60px 20px;
-    margin-top:80px;
 }
 
 footer p{
-    opacity:0.8;
     font-size:14px;
+    opacity:0.8;
 }
 
 </style>
@@ -189,29 +204,31 @@ footer p{
 
 <body>
 
+<!-- HEADER -->
 <header>
-
 <div class="nav">
 
 <div class="logo">
-<img src="logo.png">
-<div class="logo-text">HAMI <span>Tech</span></div>
+    <img src="logo.png" alt="HAMI Tech Logo">
+    <div class="logo-text">HAMI <span>Tech</span></div>
 </div>
 
 <div class="menu">
-<a href="#">Services</a>
-<a href="#">Projects</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
 </div>
 
 </div>
-
 </header>
 
+<!-- HERO -->
 <section class="hero">
 
 <div>
+
+<img src="logo.png" alt="HAMI Tech Logo">
 
 <h1>Engineering. Automation. Software.</h1>
 
@@ -220,14 +237,13 @@ High-performance industrial systems and custom software solutions
 for manufacturing, measurement and control.
 </p>
 
-<br>
-
 <a class="btn" href="#">Contact Us</a>
 
 </div>
 
 </section>
 
+<!-- SERVICES -->
 <section>
 
 <h2>Core Services</h2>
@@ -241,44 +257,44 @@ for manufacturing, measurement and control.
 
 <div class="card">
 <h3>Software Engineering</h3>
-<p>C++, VB.NET, JavaScript and Windows system development.</p>
+<p>C++, VB.NET, JavaScript and Windows development.</p>
 </div>
 
 <div class="card">
 <h3>Industrial Automation</h3>
-<p>Production line control and factory automation systems.</p>
+<p>Factory automation and production control systems.</p>
 </div>
 
 <div class="card">
-<h3>Consulting</h3>
-<p>System architecture, optimization and technical guidance.</p>
+<h3>Technical Consulting</h3>
+<p>System architecture and engineering optimization.</p>
 </div>
 
 </div>
 
 </section>
 
+<!-- ABOUT -->
 <section class="about">
 
 <h2>About HAMI Tech</h2>
 
-<p style="font-size:18px; color:#555; max-width:800px; margin:auto; line-height:1.8;">
-
-HAMI Tech is an engineering-focused company specializing in industrial automation,
+<p>
+HAMI Tech is an engineering company specializing in industrial automation,
 measurement systems and high-performance software development.
-With over 10 years of experience in LabVIEW, C++, VB.NET and industrial systems,
-we deliver reliable and scalable technical solutions.
-
+With over 10 years of experience in LabVIEW, C++, VB.NET and industrial systems in Japan.
 </p>
 
 </section>
 
+<!-- FOOTER -->
 <footer>
 
-<p>© 2026 HAMI Tech • Japan • contact@hamitech.net</p>
+<p>
+© 2026 HAMI Tech • Japan • contact@hamitech.net
+</p>
 
 </footer>
 
 </body>
-
 </html>
